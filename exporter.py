@@ -28,4 +28,4 @@ def D(json_path):
 		with E(json_path,'r',encoding=I)as C:B=G.load(C)
 		A('\nJSON Structure:');A('Number of files:',len(B));A('File paths:',list(B.keys()))
 	except H as D:A(f"Error reading JSON structure: {F(D)}")
-if __name__=='__main__':B=sys.argv[1]if len(sys.argv)>1 else'files_content.json';J='./';D(B);C(B,J)
+if __name__=='__main__':B=sys.argv[1]if len(sys.argv)>1 else'project.json';J='./';D(B);C(B,J)
